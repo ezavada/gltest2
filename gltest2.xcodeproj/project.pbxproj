@@ -21,6 +21,7 @@
 		AB2A83731804165700168FEB /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A83721804165700168FEB /* EAGLView.m */; };
 		AB2A83761804165700168FEB /* gltest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A83751804165700168FEB /* gltest2ViewController.m */; };
 		AB2A83791804165700168FEB /* gltest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2A83771804165700168FEB /* gltest2ViewController.xib */; };
+		AB2A83801804172800168FEB /* glues_quad.c in Sources */ = {isa = PBXBuildFile; fileRef = AB2A837F1804172800168FEB /* glues_quad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,20 +31,22 @@
 		AB2A83581804165600168FEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AB2A835A1804165600168FEB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AB2A835C1804165600168FEB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		AB2A83601804165700168FEB /* gltest2-Info.plist */ = {isa = PBXFileReference; path = "gltest2-Info.plist"; sourceTree = "<group>"; };
+		AB2A83601804165700168FEB /* gltest2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "gltest2-Info.plist"; sourceTree = "<group>"; };
 		AB2A83621804165700168FEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AB2A83641804165700168FEB /* gltest2-Prefix.pch */ = {isa = PBXFileReference; path = "gltest2-Prefix.pch"; sourceTree = "<group>"; };
+		AB2A83641804165700168FEB /* gltest2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gltest2-Prefix.pch"; sourceTree = "<group>"; };
 		AB2A83651804165700168FEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB2A83671804165700168FEB /* gltest2AppDelegate.h */ = {isa = PBXFileReference; path = gltest2AppDelegate.h; sourceTree = "<group>"; };
+		AB2A83671804165700168FEB /* gltest2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gltest2AppDelegate.h; sourceTree = "<group>"; };
 		AB2A83681804165700168FEB /* gltest2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gltest2AppDelegate.m; sourceTree = "<group>"; };
 		AB2A836B1804165700168FEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		AB2A836D1804165700168FEB /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		AB2A836F1804165700168FEB /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		AB2A83711804165700168FEB /* EAGLView.h */ = {isa = PBXFileReference; path = EAGLView.h; sourceTree = "<group>"; };
+		AB2A83711804165700168FEB /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
 		AB2A83721804165700168FEB /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
-		AB2A83741804165700168FEB /* gltest2ViewController.h */ = {isa = PBXFileReference; path = gltest2ViewController.h; sourceTree = "<group>"; };
+		AB2A83741804165700168FEB /* gltest2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gltest2ViewController.h; sourceTree = "<group>"; };
 		AB2A83751804165700168FEB /* gltest2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gltest2ViewController.m; sourceTree = "<group>"; };
 		AB2A83781804165700168FEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/gltest2ViewController.xib; sourceTree = "<group>"; };
+		AB2A837F1804172800168FEB /* glues_quad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glues_quad.c; sourceTree = "<group>"; };
+		AB2A83811804173000168FEB /* glues_quad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glues_quad.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				AB2A83741804165700168FEB /* gltest2ViewController.h */,
 				AB2A83751804165700168FEB /* gltest2ViewController.m */,
 				AB2A83771804165700168FEB /* gltest2ViewController.xib */,
+				AB2A83811804173000168FEB /* glues_quad.h */,
+				AB2A837F1804172800168FEB /* glues_quad.c */,
 				AB2A835F1804165700168FEB /* Supporting Files */,
 			);
 			path = gltest2;
@@ -186,6 +191,7 @@
 				AB2A83691804165700168FEB /* gltest2AppDelegate.m in Sources */,
 				AB2A83731804165700168FEB /* EAGLView.m in Sources */,
 				AB2A83761804165700168FEB /* gltest2ViewController.m in Sources */,
+				AB2A83801804172800168FEB /* glues_quad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

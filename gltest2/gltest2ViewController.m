@@ -11,6 +11,8 @@
 #import "gltest2ViewController.h"
 #import "EAGLView.h"
 
+#include "glues_quad.h"
+
 // Uniform index.
 enum {
     UNIFORM_TRANSLATE,
@@ -40,7 +42,7 @@ enum {
 
 - (void)awakeFromNib
 {
-    EAGLContext *aContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    EAGLContext *aContext = 0; //[[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     
     if (!aContext) {
         aContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];
@@ -184,6 +186,22 @@ enum {
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     
+    GLUquadricObj *qobj;
+    qobj = gluNewQuadric();
+
+//   GLfloat mat_ambient[] = { 0.5, 0.5, 0.5, 1.0 };
+//   GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
+//   GLfloat mat_shininess[] = { 10.0 };
+    GLfloat light_position[] = { -10.0, 0.0, 10.0, 0.0 };
+    GLfloat model_ambient[] = { 0.5, 0.5, 0.5, 1.0 };
+
+
+//   glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient);
+//   glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+//   glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
+    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, model_ambient);
+
     if ([context API] == kEAGLRenderingAPIOpenGLES2) {
         // Use shader program.
         glUseProgram(program);
@@ -211,15 +229,34 @@ enum {
         glLoadIdentity();
         glMatrixMode(GL_MODELVIEW);
         glLoadIdentity();
+        
+        glPushMatrix();
+        glColor4f(0, 1.0f, 1.0f, 1.0f);
+        glScalef(1.0f, 0.66f, 1.0f);
+        glEnable(GL_LIGHTING);
+        glEnable(GL_LIGHT0);
+        gluQuadricDrawStyle(qobj, GLU_FILL); /* smooth shaded */
+        gluQuadricNormals(qobj, GLU_SMOOTH);
+        gluSphere(qobj, 0.75, 30, 30);
+        glDisable(GL_LIGHT0);
+        glDisable(GL_LIGHTING);
+//   glEnable(GL_DEPTH_TEST);
+        glPopMatrix();
+        
         glTranslatef(0.0f, (GLfloat)(sinf(transY)/2.0f), 0.0f);
         transY += 0.075f;
         
+
         glVertexPointer(2, GL_FLOAT, 0, squareVertices);
         glEnableClientState(GL_VERTEX_ARRAY);
         glColorPointer(4, GL_UNSIGNED_BYTE, 0, squareColors);
         glEnableClientState(GL_COLOR_ARRAY);
     }
     
+
+
+//   gluQuadricCallback(qobj, GLU_ERROR, errorCallback);
+
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     
     [(EAGLView *)self.view presentFramebuffer];
