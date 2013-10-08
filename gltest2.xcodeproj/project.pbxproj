@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB2A83551804165600168FEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2A83541804165600168FEB /* UIKit.framework */; };
+		AB2A83571804165600168FEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2A83561804165600168FEB /* Foundation.framework */; };
+		AB2A83591804165600168FEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2A83581804165600168FEB /* CoreGraphics.framework */; };
+		AB2A835B1804165600168FEB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2A835A1804165600168FEB /* QuartzCore.framework */; };
+		AB2A835D1804165600168FEB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2A835C1804165600168FEB /* OpenGLES.framework */; };
+		AB2A83631804165700168FEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB2A83611804165700168FEB /* InfoPlist.strings */; };
+		AB2A83661804165700168FEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A83651804165700168FEB /* main.m */; };
+		AB2A83691804165700168FEB /* gltest2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A83681804165700168FEB /* gltest2AppDelegate.m */; };
+		AB2A836C1804165700168FEB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2A836A1804165700168FEB /* MainWindow.xib */; };
+		AB2A836E1804165700168FEB /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = AB2A836D1804165700168FEB /* Shader.fsh */; };
+		AB2A83701804165700168FEB /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = AB2A836F1804165700168FEB /* Shader.vsh */; };
+		AB2A83731804165700168FEB /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A83721804165700168FEB /* EAGLView.m */; };
+		AB2A83761804165700168FEB /* gltest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A83751804165700168FEB /* gltest2ViewController.m */; };
+		AB2A83791804165700168FEB /* gltest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2A83771804165700168FEB /* gltest2ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB2A83501804165600168FEB /* gltest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gltest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2A83541804165600168FEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB2A83561804165600168FEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB2A83581804165600168FEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB2A835A1804165600168FEB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AB2A835C1804165600168FEB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		AB2A83601804165700168FEB /* gltest2-Info.plist */ = {isa = PBXFileReference; path = "gltest2-Info.plist"; sourceTree = "<group>"; };
+		AB2A83621804165700168FEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB2A83641804165700168FEB /* gltest2-Prefix.pch */ = {isa = PBXFileReference; path = "gltest2-Prefix.pch"; sourceTree = "<group>"; };
+		AB2A83651804165700168FEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB2A83671804165700168FEB /* gltest2AppDelegate.h */ = {isa = PBXFileReference; path = gltest2AppDelegate.h; sourceTree = "<group>"; };
+		AB2A83681804165700168FEB /* gltest2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gltest2AppDelegate.m; sourceTree = "<group>"; };
+		AB2A836B1804165700168FEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		AB2A836D1804165700168FEB /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		AB2A836F1804165700168FEB /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		AB2A83711804165700168FEB /* EAGLView.h */ = {isa = PBXFileReference; path = EAGLView.h; sourceTree = "<group>"; };
+		AB2A83721804165700168FEB /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		AB2A83741804165700168FEB /* gltest2ViewController.h */ = {isa = PBXFileReference; path = gltest2ViewController.h; sourceTree = "<group>"; };
+		AB2A83751804165700168FEB /* gltest2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gltest2ViewController.m; sourceTree = "<group>"; };
+		AB2A83781804165700168FEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/gltest2ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB2A834D1804165600168FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2A83551804165600168FEB /* UIKit.framework in Frameworks */,
+				AB2A83571804165600168FEB /* Foundation.framework in Frameworks */,
+				AB2A83591804165600168FEB /* CoreGraphics.framework in Frameworks */,
+				AB2A835B1804165600168FEB /* QuartzCore.framework in Frameworks */,
+				AB2A835D1804165600168FEB /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB2A83451804165600168FEB = {
+			isa = PBXGroup;
+			children = (
+				AB2A835E1804165600168FEB /* gltest2 */,
+				AB2A83531804165600168FEB /* Frameworks */,
+				AB2A83511804165600168FEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB2A83511804165600168FEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB2A83501804165600168FEB /* gltest2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB2A83531804165600168FEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB2A83541804165600168FEB /* UIKit.framework */,
+				AB2A83561804165600168FEB /* Foundation.framework */,
+				AB2A83581804165600168FEB /* CoreGraphics.framework */,
+				AB2A835A1804165600168FEB /* QuartzCore.framework */,
+				AB2A835C1804165600168FEB /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB2A835E1804165600168FEB /* gltest2 */ = {
+			isa = PBXGroup;
+			children = (
+				AB2A83671804165700168FEB /* gltest2AppDelegate.h */,
+				AB2A83681804165700168FEB /* gltest2AppDelegate.m */,
+				AB2A836A1804165700168FEB /* MainWindow.xib */,
+				AB2A836D1804165700168FEB /* Shader.fsh */,
+				AB2A836F1804165700168FEB /* Shader.vsh */,
+				AB2A83711804165700168FEB /* EAGLView.h */,
+				AB2A83721804165700168FEB /* EAGLView.m */,
+				AB2A83741804165700168FEB /* gltest2ViewController.h */,
+				AB2A83751804165700168FEB /* gltest2ViewController.m */,
+				AB2A83771804165700168FEB /* gltest2ViewController.xib */,
+				AB2A835F1804165700168FEB /* Supporting Files */,
+			);
+			path = gltest2;
+			sourceTree = "<group>";
+		};
+		AB2A835F1804165700168FEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB2A83601804165700168FEB /* gltest2-Info.plist */,
+				AB2A83611804165700168FEB /* InfoPlist.strings */,
+				AB2A83641804165700168FEB /* gltest2-Prefix.pch */,
+				AB2A83651804165700168FEB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB2A834F1804165600168FEB /* gltest2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2A837C1804165700168FEB /* Build configuration list for PBXNativeTarget "gltest2" */;
+			buildPhases = (
+				AB2A834C1804165600168FEB /* Sources */,
+				AB2A834D1804165600168FEB /* Frameworks */,
+				AB2A834E1804165600168FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gltest2;
+			productName = gltest2;
+			productReference = AB2A83501804165600168FEB /* gltest2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB2A83471804165600168FEB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = AB2A834A1804165600168FEB /* Build configuration list for PBXProject "gltest2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB2A83451804165600168FEB;
+			productRefGroup = AB2A83511804165600168FEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB2A834F1804165600168FEB /* gltest2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB2A834E1804165600168FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2A83631804165700168FEB /* InfoPlist.strings in Resources */,
+				AB2A836C1804165700168FEB /* MainWindow.xib in Resources */,
+				AB2A836E1804165700168FEB /* Shader.fsh in Resources */,
+				AB2A83701804165700168FEB /* Shader.vsh in Resources */,
+				AB2A83791804165700168FEB /* gltest2ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB2A834C1804165600168FEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2A83661804165700168FEB /* main.m in Sources */,
+				AB2A83691804165700168FEB /* gltest2AppDelegate.m in Sources */,
+				AB2A83731804165700168FEB /* EAGLView.m in Sources */,
+				AB2A83761804165700168FEB /* gltest2ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB2A83611804165700168FEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2A83621804165700168FEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AB2A836A1804165700168FEB /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2A836B1804165700168FEB /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		AB2A83771804165700168FEB /* gltest2ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2A83781804165700168FEB /* en */,
+			);
+			name = gltest2ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB2A837A1804165700168FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB2A837B1804165700168FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		AB2A837D1804165700168FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gltest2/gltest2-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "gltest2/gltest2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AB2A837E1804165700168FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gltest2/gltest2-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "gltest2/gltest2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB2A834A1804165600168FEB /* Build configuration list for PBXProject "gltest2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2A837A1804165700168FEB /* Debug */,
+				AB2A837B1804165700168FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2A837C1804165700168FEB /* Build configuration list for PBXNativeTarget "gltest2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2A837D1804165700168FEB /* Debug */,
+				AB2A837E1804165700168FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB2A83471804165600168FEB /* Project object */;
+}
